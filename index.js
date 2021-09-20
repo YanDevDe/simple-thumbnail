@@ -174,7 +174,7 @@ function genThumbnail (input, output, size, config = {}) {
     )
   }
 
-  if ((input === null && output === null) || config.args) {
+  if ((input === null && output === null)) {
     return ffmpegDuplexExecute(ffmpegPath, args)
   }
   if (output === null) {
